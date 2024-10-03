@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.navbar a.right{
+    float: right;
+    padding: 14px 20px;
+
+}
+
+.navbar {
+    background-color: rgb(113, 110, 17);
+    height: 50px;
+}
+
+.side {
+    flex: 50%;
+    padding: 20px;
+    border: 5px dashed greenyellow;
+
+}
+
+.main {
+    flex: 50%;
+    padding: 20px;
+    border: 5px dashed blueviolet;
+}
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.fit-picture {
+    width:auto;
+    height:400px;
+}
+
+
+/* Responsive layout - When the screen is less than 400px wide, make the navigstion bar smaller */
+
+@media screen and (max_width: 400px) {
+    .navbar a{
+        float: none;
+        width: 100%
+    }
+}
+
+@media screen and (max_width: 700px) {
+    .row a{
+        flex-direction: column;
+    }
+}
